@@ -1,0 +1,29 @@
+<div >
+
+  <h1 style="text-align: center;">Liste de Pokémon</h1>
+  <app-search-pokemon></app-search-pokemon>
+  <div class='container'>
+        <div class="row">
+            <div *ngFor="let pokemon of pokemons" class="col s6 m4" >
+
+              <div id="div" class="card horizontal" (click)="selectPokemon(pokemon)"pkmBorderCard [color]="pokemon.cp===6?'#FF0000':'#000000'">
+                    <div class="card-image" >
+                      <img src="{{pokemon.picture}}">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p><small>{{pokemon.name}}  </small></p>
+                            <p *ngFor="let type of pokemon.types" class="{{type | pkmnTypeColor}}"><small>Types : {{type}}</small></p>
+                            <p><small>{{pokemon.created| date: 'dd/MM/yyyy'}}</small></p>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
