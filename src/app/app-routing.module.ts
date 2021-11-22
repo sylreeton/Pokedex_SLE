@@ -1,9 +1,10 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { page404Component } from "./Page404.component";
+import { ListPokemonComponent } from "./Pokemons/list-pokemon.component";
+// import { page404Component } from "./Page404.component";
 const appRoutes: Routes = [
   { path: '',redirectTo: 'pokemon/all', pathMatch: 'full'},
-  { path: '**' ,component: page404Component}
+  { path: '**' ,component: ListPokemonComponent}
 
 ]
 @NgModule({

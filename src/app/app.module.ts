@@ -4,7 +4,7 @@ import { Component, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { page404Component } from './Page404.component';
+// import { page404Component } from './Page404.component';
 import { PokemonsModule } from './Pokemons/pokemon.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -19,7 +19,7 @@ import { AuthguardService } from './auth-guard.service';
   declarations: [
     AppComponent,
     LoginComponent,
-
+    // page404Component,
   ],
   imports: [
     BrowserModule,
