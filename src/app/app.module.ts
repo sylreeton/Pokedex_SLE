@@ -18,8 +18,8 @@ import { AuthguardService } from './auth-guard.service';
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
     page404Component,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
