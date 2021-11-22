@@ -19,7 +19,7 @@ import { AuthguardService } from './auth-guard.service';
   declarations: [
     AppComponent,
     LoginComponent,
-    page404Component,
+
   ],
   imports: [
     BrowserModule,
